@@ -1,0 +1,131 @@
+/*----------------css footer---------------*/
+footer{
+    position: relative;
+    /* width: 100%; */
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    }
+footer .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
+.about, .links, .contact{
+    display: inline-block;
+}
+
+/*-------------------------Giới thiệu----------------------------------*/
+.about h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.about h2::before{
+    content: ' ';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: red;
+}
+.container .noi-dung{
+    margin-right: 30px;
+}
+.container .about{
+    width:20%;
+}
+.container .about p{
+    color: #999;
+}
+.about .profile li :hover{
+color: red;
+}
+.about ul li{
+    list-style: none;
+    display: block;
+}
+.about ul li a{
+    color: #999;
+    text-decoration: none;
+}
+/*---------------------------Đường dẫn-------------------------------*/
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.links h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.links{
+position: relative;
+width: 25%;
+}
+.links ul li{
+    list-style: none;
+    display: block;
+}
+.links ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+footer .links ul li a:hover{
+    color: #fff;
+}
+/*----------------------------------Liên hệ----------------------------------*/
+.contact h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.contact h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+/*----------------copyright-------------------------*/
+footer p{
+    text-align: center;
+    color:#fff;
+}

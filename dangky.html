@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đăng kí</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<script language="javascript" src="dangky.js"></script>
+<form name="ngdung">
+<div class="register">
+	<h1>Đăng ký</h1>
+	<p>Vui lòng điền thông tin để đăng ký</p>
+
+	<hr>
+			<p class="bold">Nhập tên người dùng:</p>
+			<input 
+			type="text" name="hovaten" 
+			placeholder="Tên người dùng"/><br>
+			
+			<p class="bold">Nhập email:</p>
+			<input type="text" name="email"
+			placeholder="Email"/><br>
+			
+			<p class="bold">Nhập mật khẩu:</p>
+			<input type="password" name="pass1"
+			placeholder="********"/><br>
+			
+			<p class="bold">Nhập lại mật khẩu:</p>
+			<input type="password" name="pass2"
+			placeholder="********"/><br>
+			
+	<hr>
+	<p class="center">Vui lòng đồng ý với điều khoản của chúng tôi 
+	<br>
+	<a href="#">Điều khoản & Bảo mật</a>.</p>
+			
+			<input type="button" value="Đăng ký" onclick="ktranhap(document.forms.ngdung);" class="submit">
+
+</div>
+<div class="register login">
+<p>Bạn đã có tài khoản rồi? <a href="dangnhap.html">Đăng nhập</a> <a href="web.html">Trang chủ</a></p>
+</div>
+</form>
+</body>
+</html>
